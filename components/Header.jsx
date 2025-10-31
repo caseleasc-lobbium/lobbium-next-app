@@ -8,18 +8,15 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-200">
       <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
         {/* Logo + Titel */}
-        <a href="/" className="flex items-center gap-2">
-          <Image
-            src="/logo.png"
-            alt="Lobbium Logo"
-            width={40}
-            height={40}
-            className="rounded-md"
-          />
-          <span className="text-xl font-bold tracking-tight text-gray-800">
-            Lobbium
-          </span>
-        </a>
+        <a href="/" className="flex items-center">
+  <Image
+    src="/logo.png"
+    alt="Lobbium Logo"
+    width={80}   // doppelt so breit
+    height={80}  // doppelt so hoch
+    className="rounded-md"
+  />
+</a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
