@@ -5,26 +5,39 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-200">
       <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-        <a href="/" className="flex items-center gap-2">
-          <Image
-            src="/logo.png"
-            alt="Lobbium Logo"
-            width={85}
-            height={85}
-            className="rounded-md"
-            priority
-  />
-</a>
+
+        {/* Logo-Bereich */}
+        <a href="/" className="flex items-center">
+          <div className="flex items-center justify-center w-[90px] h-[90px]">
+            <Image
+              src="/logo.png"
+              alt="Lobbium Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+        </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-          <a className="hover:text-blue-600" href="/finanzen-spartipps">Finanzen</a>
-          <a className="hover:text-blue-600" href="/familienleben-alltag">Familienleben</a>
-          <a className="hover:text-blue-600" href="/kinder-bildung">Kinder & Bildung</a>
-          <a className="hover:text-blue-600" href="/blog">Blog</a>
-          <a className="hover:text-blue-600" href="/kontakt">Kontakt</a>
+        <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
+          <a className="hover:text-blue-600 transition" href="/finanzen-spartipps">
+            Finanzen
+          </a>
+          <a className="hover:text-blue-600 transition" href="/familienleben-alltag">
+            Familienleben
+          </a>
+          <a className="hover:text-blue-600 transition" href="/kinder-bildung">
+            Kinder & Bildung
+          </a>
+          <a className="hover:text-blue-600 transition" href="/blog">
+            Blog
+          </a>
+          <a className="hover:text-blue-600 transition" href="/kontakt">
+            Kontakt
+          </a>
         </nav>
 
         {/* Newsletter Button (Desktop) */}
@@ -39,6 +52,7 @@ export default function Header() {
         <button
           className="md:hidden p-2 rounded-lg hover:bg-gray-100"
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Menü öffnen oder schließen"
         >
           ☰
         </button>
@@ -47,11 +61,21 @@ export default function Header() {
       {/* Mobile Menü */}
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 flex flex-col p-4 space-y-2 text-sm">
-          <a href="/finanzen-spartipps" className="hover:text-blue-600">Finanzen</a>
-          <a href="/familienleben-alltag" className="hover:text-blue-600">Familienleben</a>
-          <a href="/kinder-bildung" className="hover:text-blue-600">Kinder & Bildung</a>
-          <a href="/blog" className="hover:text-blue-600">Blog</a>
-          <a href="/kontakt" className="hover:text-blue-600">Kontakt</a>
+          <a href="/finanzen-spartipps" className="hover:text-blue-600">
+            Finanzen
+          </a>
+          <a href="/familienleben-alltag" className="hover:text-blue-600">
+            Familienleben
+          </a>
+          <a href="/kinder-bildung" className="hover:text-blue-600">
+            Kinder & Bildung
+          </a>
+          <a href="/blog" className="hover:text-blue-600">
+            Blog
+          </a>
+          <a href="/kontakt" className="hover:text-blue-600">
+            Kontakt
+          </a>
           <a
             href="/newsletter"
             className="rounded-lg bg-blue-600 px-4 py-2 text-white font-semibold text-center shadow hover:bg-blue-700 transition"
