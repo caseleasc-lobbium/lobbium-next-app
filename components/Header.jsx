@@ -8,9 +8,9 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-200">
       <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
 
-        {/* Logo-Bereich */}
-        <a href="/" className="flex items-center">
-          <div className="flex items-center justify-center w-[90px] h-[90px]">
+        {/* Logo-Bereich (links ausgerichtet) */}
+        <a href="/" className="flex items-center justify-start">
+          <div className="w-[90px] h-[90px] relative">
             <Image
               src="/logo.png"
               alt="Lobbium Logo"
