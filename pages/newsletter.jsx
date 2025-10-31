@@ -1,0 +1,1 @@
+export default function Page() { return (<div className='max-w-5xl mx-auto p-8'><h1 className='text-3xl font-bold text-ldark'>Newsletter</h1><p className='mt-3 text-slate-600'>Melde dich an und erhalte die besten Familientipps.</p></div>); }
