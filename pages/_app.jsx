@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
           name="description"
           content="Clever sparen, Alltag organisieren und Kinder spielerisch fördern."
         />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
       </Head>
 
       <Header />

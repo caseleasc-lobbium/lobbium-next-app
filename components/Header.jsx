@@ -5,16 +5,16 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-200">
+     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
       <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-        {/* Logo + Titel */}
-        <a href="/" className="flex items-center">
-  <Image
-    src="/logo.png"
-    alt="Lobbium Logo"
-    width={80}   // doppelt so breit
-    height={80}  // doppelt so hoch
-    className="rounded-md"
+        <a href="/" className="flex items-center gap-2">
+          <Image
+            src="/logo.png"
+            alt="Lobbium Logo"
+            width={85}
+            height={85}
+            className="rounded-md"
+            priority
   />
 </a>
 
