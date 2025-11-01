@@ -34,8 +34,8 @@ export default function Maintenance() {
         <Image
           src="/logo.png"
           alt="Lobbium Logo"
-          width={130}
-          height={130}
+          width={120}
+          height={120}
           className="object-contain"
           priority
         />
